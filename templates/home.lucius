@@ -1,0 +1,60 @@
+html {
+    background: url(static/img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: inline-block;
+    background: black;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    top: 0;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    color: white;
+    font-size: 21.5px;
+    padding: 20px;
+    font-family: Optima, sans-serif;
+    text-decoration: none;
+}
+
+#home {
+    background: rgb(96, 48, 32);
+}
+
+#p1:hover, #p2:hover, #p3:hover {
+    color: black;
+    background: rgb(255, 255, 153);
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    padding-top: 120px;
+    margin: 0;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-family: Verdana, sans-serif;
+}
+
+#titulo {
+    font-size: 100px;
+    font-family: Candara, monospace;
+}

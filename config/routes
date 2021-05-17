@@ -1,0 +1,9 @@
+/static StaticR Static appStatic
+
+/favicon.ico FaviconR GET
+/robots.txt RobotsR GET
+
+/ HomeR GET 
+/sobre Page1R GET
+/receitas Page2R GET
+/medidas Page3R GET

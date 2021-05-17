@@ -1,0 +1,19 @@
+<header>
+    <nav class="menu">
+        <ul>
+            <li>
+                <a id="home" href=@{HomeR}> Início
+            <li>
+                <a id="p1" href=@{Page1R}> Sobre
+            <li>
+                <a id="p2" href=@{Page2R}> Receitas
+            <li>
+                <a id="p3" href=@{Page3R}> Medidas de Ingredientes
+
+<div class="main">
+    <h1> Sobre
+    <p> O site Cakelator foi desenvolvido pensando na dificuldade enfrentada pelas 
+    <p> pessoas que querem vender seus doces mas não sabem como calcular o preço de venda. 
+    <p> A principal função presente no Cakelator é a calculadora de receitas criada 
+    <p> especialmente para facilitar a vida dos confeiteiros. Além disso, é possível
+    <p> conferir novas receitas disponíveis para aprender e fazer.
