@@ -7,29 +7,21 @@
 module Handler.Usuario where
 
 import Import
+import Text.Lucius
 
 formUsuario :: Form Usuario 
 formUsuario = renderDivs $ Usuario
     <$> areq textField "Nome: " Nothing
     <*> areq textField "Email: " Nothing
-    <*> areq textField "Senha: " Nothing
+    <*> areq passwordField "Senha: " Nothing
 
 getUsuarioR :: Handler Html
 getUsuarioR = do
     (widget,_) <- generateFormPost formUsuario
     msg <- getMessage
-    defaultLayout $
-        [whamlet|
-            $maybe mensa <- msg 
-                <div>
-                    ^{mensa}
-            <h1>
-                CADASTRO DE USUARIO
-                
-            <form method=post action=@{UsuarioR}>
-                ^{widget}
-                <input type="submit" value="Cadastrar">
-        |]
+    defaultLayout $ do
+        toWidgetHead $(luciusFile "templates/Cadastro.lucius")
+        $(whamletFile "templates/Cadastro.hamlet")
 
 postUsuarioR :: Handler Html
 postUsuarioR = do
@@ -45,26 +37,19 @@ postUsuarioR = do
          _ -> redirect HomeR
          
 getPerfilR :: UsuarioId -> Handler Html
-getPerfilR user = do
-    usuario <- runDB $ get404 cid
-    defaultLayout [whamlet|
-          <h1>
-              PAGINA DE #{usuarioNome usuario}
-              
-          <h2>
-              Email: #{usuarioEmail usuario}
-              
-         <h2> 
-              Senha: #{usuarioSenha usuario}
-    |]
+getPerfilR userid = do
+    usuario <- runDB $ get404 userid
+    defaultLayout $ do
+        toWidgetHead $(luciusFile "templates/Perfil.lucius")
+        $(whamletFile "templates/Perfil.hamlet")
     
-getListaUserR :: Handler Html
-getListaUserR = do
+getListaUsR :: Handler Html
+getListaUsR = do
     usuarios <- runDB $ selectList [] [Asc UsuarioNome]
     defaultLayout $ do
-        $(whamletFile "templates/Usuarios.hamlet")
+        $(whamletFile "templates/usuarios.hamlet")
         
-postApagarUserR :: UsuarioId -> Handler Html
-postApagarUsR cid = do
-    runDB $ delete cid
+postApagarUsR :: UsuarioId -> Handler Html
+postApagarUsR userid = do
+    runDB $ delete userid
     redirect ListaUsR

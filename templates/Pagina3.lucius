@@ -31,7 +31,7 @@ body {
     background: rgb(96, 48, 32);
 }
 
-#home:hover, #p1:hover, #p2:hover {
+#home:hover, #p1:hover, #p2:hover, #p4:hover {
     color: black;
     background: rgb(255, 255, 153);
 }

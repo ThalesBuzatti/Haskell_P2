@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100vh;
+    min-height: 100vh;
+}
+
+.menu {
+    display: inline-block;
+    background: black;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    top: 0;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    color: white;
+    font-size: 21.5px;
+    padding: 20px;
+    font-family: Optima, sans-serif;
+    text-decoration: none;
+}
+
+#p4 {
+    background: rgb(96, 48, 32);
+}
+
+#home:hover, #p1:hover, #p2:hover, #p3:hover {
+    color: black;
+    background: rgb(255, 255, 153);
+}
+
+.main {
+    background-color: whitesmoke;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 120px;
+    padding-left: 50px;
+    margin: 0;
+    text-align: left;
+    color: black;
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+}
+
+.required {
+    padding: 10px 0;
+}

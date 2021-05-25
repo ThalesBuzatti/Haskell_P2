@@ -10,5 +10,5 @@
 
 /usuario UsuarioR GET POST
 /usuario/perfil/#UsuarioId PerfilR GET
-/usuario ListaUsR GET
+/usuarios ListaUsR GET
 /usuario/apagar/#UsuarioId ApagarUsR POST

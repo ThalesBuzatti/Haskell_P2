@@ -9,7 +9,7 @@
                 SENHA
             <th>
     <tbody>
-        $forall Entity cid usuario <- usuarios
+        $forall Entity userid usuario <- usuarios
             <tr>
                 <td>
                     #{usuarioNome usuario}
@@ -18,5 +18,5 @@
                 <td>
                     #{usuarioSenha usuario}
                 <td>
-                    <form method=post action=@{ApagarUsR cid}>
+                    <form method=post action=@{ApagarUsR userid}>
                         <input type="submit" value="X">

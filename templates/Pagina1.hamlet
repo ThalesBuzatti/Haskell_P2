@@ -9,6 +9,8 @@
                 <a id="p2" href=@{Page2R}> Receitas
             <li>
                 <a id="p3" href=@{Page3R}> Medidas de Ingredientes
+            <li>
+                <a id="p4" href=@{UsuarioR}> Cadastro
 
 <div class="main">
     <h1> Sobre
