@@ -24,6 +24,7 @@ library
       Foundation
       Handler.Common
       Handler.Home
+      Handler.Login
       Handler.Usuario
       Import
       Import.NoFoundation

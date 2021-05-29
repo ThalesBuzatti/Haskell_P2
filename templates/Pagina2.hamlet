@@ -1,6 +1,6 @@
 <header>
     <nav class="menu">
-        <ul>
+        <ul class="m1">
             <li>
                 <a id="home" href=@{HomeR}> Início
             <li>
@@ -9,8 +9,18 @@
                 <a id="p2" href=@{Page2R}> Receitas
             <li>
                 <a id="p3" href=@{Page3R}> Medidas de Ingredientes
-            <li>
-                <a id="p4" href=@{UsuarioR}> Cadastro
+
+        <ul class="m2">
+            $maybe email <- usuario
+                <li>
+                    <form action=@{SairR} method=post> 
+                        <input type="submit" value="Sair" id="sair">
+            
+            $nothing
+                <li>
+                    <a id="cad" href=@{UsuarioR}> Cadastre-se
+                <li>
+                    <a id="login" href=@{AutR}> Login
 
 <div class="main">
 

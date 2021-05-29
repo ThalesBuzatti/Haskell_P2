@@ -26,6 +26,35 @@ type Form a = Html -> MForm Handler (FormResult a, Widget)
 instance Yesod App where
     makeLogger = return . appLogger
 
+    authRoute _ = Just AutR
+
+    isAuthorized HomeR _ = return Authorized
+    isAuthorized Page1R _ = return Authorized
+    isAuthorized Page2R _ = return Authorized
+    isAuthorized Page3R _ = return Authorized
+    isAuthorized (StaticR _) _ = return Authorized
+    isAuthorized UsuarioR _ = return Authorized
+    isAuthorized AutR _ = return Authorized
+    isAuthorized AdminR _ = isAdmin
+    isAuthorized ListaUsR _ = isAdmin
+
+    isAuthorized _ _ = isUsuario
+
+isUsuario :: Handler AuthResult
+isUsuario = do
+    sess <- lookupSession "_ID"
+    case sess of
+        Nothing -> return AuthenticationRequired
+        Just _ -> return Authorized
+
+isAdmin :: Handler AuthResult
+isAdmin = do
+    sess <- lookupSession "_ID"
+    case sess of
+        Nothing -> return AuthenticationRequired
+        Just "admin" -> return Authorized
+        Just _ -> return (Unauthorized "Não autorizado")
+
 instance YesodPersist App where
     type YesodPersistBackend App = SqlBackend
     runDB action = do

@@ -1,6 +1,6 @@
 <header>
     <nav class="menu">
-        <ul>
+        <ul class="m1">
             <li>
                 <a id="home" href=@{HomeR}> Início
             <li>
@@ -9,16 +9,19 @@
                 <a id="p2" href=@{Page2R}> Receitas
             <li>
                 <a id="p3" href=@{Page3R}> Medidas de Ingredientes
+
+        <ul class="m2">
             <li>
-                <a id="p4" href=@{UsuarioR}> Cadastro
+                <form action=@{SairR} method=post> 
+                    <input type="submit" value="Sair" id="sair">
+            
 
 <div class="main">
     <h1 id="titulo">
         Meu Perfil
     <div id="dados">
-        <h2>
-            Nome: 
-        #{usuarioNome usuario} 
-        <h2>
-            E-mail:
-        #{usuarioEmail usuario}
+        Nome: #{usuarioNome usuario} 
+        E-mail: #{usuarioEmail usuario}
+        <form method=post action=@{ApagarUsR userid}>
+            <input type="submit" value="Excluir conta">
+        <a href=@{EditarUsR userid}> Editar perfil

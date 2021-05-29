@@ -19,4 +19,4 @@
                     #{usuarioSenha usuario}
                 <td>
                     <form method=post action=@{ApagarUsR userid}>
-                        <input type="submit" value="X">
+                        <input type="submit" value="Excluir conta">

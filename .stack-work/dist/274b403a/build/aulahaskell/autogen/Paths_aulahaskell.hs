@@ -29,12 +29,12 @@ version :: Version
 version = Version [0,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "C:\\Users\\Bianca\\documents\\dep\243sito\\6\\haskell\\Haskell_p2\\.stack-work\\install\\27d982ea\\bin"
-libdir     = "C:\\Users\\Bianca\\documents\\dep\243sito\\6\\haskell\\Haskell_p2\\.stack-work\\install\\27d982ea\\lib\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0-J4gQfHFtUXd1QFijXEZhSf-aulahaskell"
-dynlibdir  = "C:\\Users\\Bianca\\documents\\dep\243sito\\6\\haskell\\Haskell_p2\\.stack-work\\install\\27d982ea\\lib\\x86_64-windows-ghc-8.10.4"
-datadir    = "C:\\Users\\Bianca\\documents\\dep\243sito\\6\\haskell\\Haskell_p2\\.stack-work\\install\\27d982ea\\share\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0"
-libexecdir = "C:\\Users\\Bianca\\documents\\dep\243sito\\6\\haskell\\Haskell_p2\\.stack-work\\install\\27d982ea\\libexec\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0"
-sysconfdir = "C:\\Users\\Bianca\\documents\\dep\243sito\\6\\haskell\\Haskell_p2\\.stack-work\\install\\27d982ea\\etc"
+bindir     = "C:\\Users\\Bianca\\documents\\dep\243sito\\6\\haskell\\haskell_p2\\.stack-work\\install\\27d982ea\\bin"
+libdir     = "C:\\Users\\Bianca\\documents\\dep\243sito\\6\\haskell\\haskell_p2\\.stack-work\\install\\27d982ea\\lib\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0-J4gQfHFtUXd1QFijXEZhSf-aulahaskell"
+dynlibdir  = "C:\\Users\\Bianca\\documents\\dep\243sito\\6\\haskell\\haskell_p2\\.stack-work\\install\\27d982ea\\lib\\x86_64-windows-ghc-8.10.4"
+datadir    = "C:\\Users\\Bianca\\documents\\dep\243sito\\6\\haskell\\haskell_p2\\.stack-work\\install\\27d982ea\\share\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0"
+libexecdir = "C:\\Users\\Bianca\\documents\\dep\243sito\\6\\haskell\\haskell_p2\\.stack-work\\install\\27d982ea\\libexec\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0"
+sysconfdir = "C:\\Users\\Bianca\\documents\\dep\243sito\\6\\haskell\\haskell_p2\\.stack-work\\install\\27d982ea\\etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "aulahaskell_bindir") (\_ -> return bindir)

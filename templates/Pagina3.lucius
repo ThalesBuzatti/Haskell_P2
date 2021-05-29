@@ -5,7 +5,7 @@ body {
 }
 
 .menu {
-    display: inline-block;
+    display: flex;
     background: black;
     position: fixed;
     width: 100%;
@@ -15,25 +15,70 @@ body {
     top: 0;
 }
 
+.menu ul {
+    display: flex;
+    margin: 0;
+}
+
 .menu li {
-    display: inline-block;
+    display: flex;
 }
 
 .menu a {
-    color: white;
-    font-size: 21.5px;
-    padding: 20px;
     font-family: Optima, sans-serif;
     text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
 }
 
-#p3 {
+.m1 {
+    min-width: fit-content;
+}
+
+.m1 a {
+    color: white;
+}
+
+.m1 a:hover {
+    color: rgb(255, 255, 153);
+}
+
+.m2 {
+    flex-direction: column;
+    width: inherit;
+    padding-right: 20px;
+}
+
+.m2 li {
+    flex: auto;
+}
+
+.m2 a {
+    color: lightsalmon;
+    font-size: 15px;
+    padding: 5px 20px;
+    flex-basis: 100%;
+    text-align: right;
+}
+
+.m2 form {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.m2 #sair {
+    border: none;
+    font-size: 15px;
+    background-color: black;
+    color: lightsalmon;
+    cursor: pointer;
+}
+
+#p3, #p3:hover {
     background: rgb(96, 48, 32);
-}
-
-#home:hover, #p1:hover, #p2:hover, #p4:hover {
-    color: black;
-    background: rgb(255, 255, 153);
+    color: white;
 }
 
 .main {
