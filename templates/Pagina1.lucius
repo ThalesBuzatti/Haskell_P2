@@ -1,5 +1,5 @@
 html {
-    background: url(static/img/bg.jpg);
+    background: url(static/img/bg_sobre.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

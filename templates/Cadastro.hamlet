@@ -14,8 +14,7 @@
             $maybe email <- usuario
                 <li>
                     <form action=@{SairR} method=post> 
-                        <input type="submit" value="Sair" id="sair">
-            
+                        <input type="submit" value="Sair" id="sair">            
             $nothing
                 <li>
                     <a id="cad" href=@{UsuarioR}> Cadastre-se
@@ -23,11 +22,12 @@
                     <a id="login" href=@{AutR}> Login
 
 <div class="main">
-    $maybe mensa <- msg 
-        <div class="msg">
-            ^{mensa}
-    <h1>
-        Cadastro               
-    <form method=post action=@{UsuarioR}>
-        ^{widget}
-        <input type="submit" value="Cadastrar" id="botao">
+    <div class="painel">
+        <h1>
+            Cadastro               
+        <form method=post action=@{UsuarioR}>
+            ^{widget}
+            <input type="submit" value="Cadastrar" id="botao">
+        $maybe mensa <- msg 
+            <div class="msg">
+                ^{mensa}

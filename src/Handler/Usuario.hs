@@ -36,26 +36,26 @@ postUsuarioR = do
             case usuarioExiste of
                 Just _ -> do
                     setMessage [shamlet|
-                        <div class="msg">
+                        <div class="msg" id="erro">
                             E-mail já cadastrado.
                     |]
                     redirect UsuarioR
                 Nothing -> do
                     if senha == conf then do
                         runDB $ insert usuario
-{-                        setMessage [shamlet|
+                        setMessage [shamlet|
                             <div class="msg" id="sucesso">
                                 Cadastro realizado com sucesso!
-                        |]  -}
+                        |]  
                         redirect UsuarioR
                     else do
-                        redirect HomeR -- linha temporária
+                        redirect UsuarioR  -- linha temporária
 {-                        setMessage [shamlet|
-                            <div class="msg">
+                            <div class="msg" id="erro">
                                 As duas senhas são diferentes.
                         |]  -}
         _ -> redirect HomeR
-         
+
 getPerfilR :: UsuarioId -> Handler Html
 getPerfilR userid = do
     usuario <- runDB $ get404 userid
@@ -95,24 +95,24 @@ postEditarUsR userid = do
             case usuarioExiste of
                 Just _ -> do
                     setMessage [shamlet|
-                        <div class="msg">
+                        <div class="msg" id="erro">
                             E-mail já cadastrado.
                     |]
                     redirect (EditarUsR userid)
                 Nothing -> do
                     if senha == conf then do 
                         runDB $ replace userid novoUsuario
-{-                        setMessage [shamlet|
+                        setMessage [shamlet|
                             <div class="msg" id="sucesso">
                                 Dados alterados com sucesso!
-                        |]  -}
-                        redirect (PerfilR userid)
+                        |]  
+                        redirect (EditarUsR userid)
                     else do
                         redirect (PerfilR userid) -- linha temporária
 {-                        setMessage [shamlet|
-                            <div class="msg">
+                            <div class="msg" id="erro">
                                 As duas senhas são diferentes.
-                        |] -}
+                        |]  -}
         _ -> redirect HomeR
 
 getAdminR :: Handler Html

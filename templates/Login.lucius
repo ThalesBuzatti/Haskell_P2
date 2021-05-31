@@ -1,4 +1,13 @@
+html {
+    background: url(static/img/bg_usuario.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 body {
+    position: fixed;
     margin: 0;
     padding: 0;
     min-width: 100vh;
@@ -78,21 +87,29 @@ body {
 }
 
 .main {
+    position: fixed;
     display: flex;
     flex-direction: column;
-    background-color: lightgray;
     width: 100%;
     min-height: 100vh;
-    padding-top: 120px;
-    margin: 0;
+    margin-top: 120px;
     text-align: center;
-    color: black;
+    color: white;
     font-size: 15px;
     font-family: Verdana, sans-serif;
 }
 
-.main .msg {
-    color: darkred;
+.main .painel {
+    width: 780px;
+    height: 250px;
+    background-color: rgb(0,0,0,0.8);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.msg #erro {
+    color: rgb(255, 153, 51);
+    padding-top: 10px;
 }
 
 #hident2, #hident3 {

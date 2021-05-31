@@ -3,7 +3,7 @@ C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\templates\usuarios.haml
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\config\settings.yml:
   hash: c1f60af12cdcee94bfae84bc8e90697f4e1e501f40c5e8b4986d293869431835
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\templates\Cadastro.hamlet:
-  hash: 00b6062363f60dad05ab28836934c3a05aa1c68a427f78e7351a79a9bff31260
+  hash: 38056072bcb5fcef63c75bc494c98a1dc1ee7f37bf1561670d719dcd250634bb
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\src\Settings.hs:
   hash: ded88c52cc9077a13ed9839cc65d5668dc56c5de9b7991d35604d819cfd17cd8
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\aulahaskell.cabal:
@@ -13,21 +13,21 @@ C:\Users\Bianca\AppData\Local\Programs\stack\x86_64-windows\ghc-8.10.4\lib\inclu
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\templates\admin.lucius:
   hash: 2512f98092bcd571a6fcbc19d9ef49d40815d2d01d46759c54bcad2c2e3358e3
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\templates\home.lucius:
-  hash: 867008260f224d95b8e0696ade2a01cc1ca374d2ebc06a36bc2b7792ac9a66fc
+  hash: bb7642985f55c03afbb65b94b324176d0f95fedee94cba4e1238f9505b929a87
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\templates\Editar.lucius:
-  hash: 6ab842890225738759298a5cbcfd496c88186eb70a494814b6738c8975d9d26f
+  hash: 15664c78bc9be679f618e800e569b5209a1fe7297785619a0eb3bc03c7b437dc
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\templates\Pagina3.hamlet:
   hash: dc0da88018d4dd22a017e5e87d4d40d61efca1fcb671e499bc2014a46ddac03c
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\src\Model.hs:
   hash: d2788bfc0fd286bb229d99fd71805826c53db206fe31573712860b44623d3188
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\templates\Cadastro.lucius:
-  hash: f818b8fb763126e7e6dc2d91ae4e276f833a052380f904d76664b1e1e9d5537b
+  hash: dcf7f37d9e276e9e2377830310e65ab25acf729d14cddb3c7c653f3b344e7566
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\src\Application.hs:
   hash: 9990646c48276ba77017b399fdd147a3140a5a269fa3fbb18019abe81b42d735
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\templates\usuarios.lucius:
   hash: 34b6835391a878e404e00595a43dc1b91aa714646ee310754347a04049e5f5a5
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\src\Handler\Usuario.hs:
-  hash: f6720fa0a693664c89c535cb520f9d9f2d7704967a1ddae4c89eab78eef65a8b
+  hash: 127772234a5f1d0dc957c41ca5e4124926d7bee476d7d3ebc27502077221b87f
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\config\models:
   hash: 2992af6be24b442991631e30438e46e3ac29ee4766b9be232fe7a7eab431d4ec
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\src\Handler\Common.hs:
@@ -37,25 +37,25 @@ C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\config\robots.txt:
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\.stack-work\dist\274b403a\build\autogen\cabal_macros.h:
   hash: d103744cab8f4a852f2c9d5963148904ec4ecdb959a55a5c5bf7338e80b13ab1
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\templates\Login.lucius:
-  hash: 79ae5197851924fb5bb9aa76d98bfd7ae215796966f75f410fa99f1e51aed6d3
+  hash: cdeea215ce7bd0f0a9cfb1be3a63bad06c68f5c86332e67ebc3457205afc6c56
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\src\Foundation.hs:
   hash: 79f6871bbb06b87b55c803527c3833066fe661b030907bed91693a4eaf6e9f79
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\templates\Pagina1.lucius:
-  hash: f68906f7133e4e4a6be28ce259abd84721e1c189286318b9c2c20857cdcfee95
+  hash: 42d2915b8f41e76f1cbefef04b40e656173b47eaf891b9bc1f21549297e9e8d2
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\package.yaml:
   hash: 021fa3319fdcf84ac38872fd4c0ae6e13e819e381f6cdb547aa9947bfb0fa27f
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\src\Import.hs:
   hash: cbb5e147e8b0d300e678aeed69fd48c040286f33c1bf98267eef11171943de55
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\templates\Pagina2.lucius:
-  hash: 694407c0f11a8203c470329dfc5846d5ee90131e2cf9a536c73675386e57aeb0
+  hash: 45a6288dd5de97873620d4349546a5b08dd36538e78a34edf1c0c0522ab48c61
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\.stack-work\dist\274b403a\build\autogen\Paths_aulahaskell.hs:
   hash: ffc699bbe3348fd6d7bce07640dc5465a3e809a53b238e34bcc409bf43d9743a
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\templates\Login.hamlet:
-  hash: e431909a94ce16deb404f8474a81f2c1fb2b8c3cd737be81fceeffabfc04e516
+  hash: 624bc5d218270c590565450a0c5ccf629766d4e8e86603714c15a95b389e4f8d
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\templates\Perfil.hamlet:
-  hash: a2e948b885b5c5bea8b3bd9dcdaab238ca3807675f4eb97cbc9ef100a0b5065f
+  hash: 1203d329f987367db3f97d3018119d294c49a7806c5776556602e248d2f50414
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\src\Handler\Login.hs:
-  hash: 2510120849d62e3b04c3130a18f4c2e0bd5bed22cb43e35941083ec9197d0b83
+  hash: d1915caf48b31d6a70d442cc3505500d299bbc1a9396286d8be4f6e63e1c3ac3
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\config\routes:
   hash: 32c58970b2291afeb8f8e3548aa3faa8228beb9522ada4e9587dd81af6cef288
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\templates\Pagina1.hamlet:
@@ -71,11 +71,11 @@ C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\templates\home.hamlet:
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\config\favicon.ico:
   hash: 26f64af57709ca371fe68e50a5d915661e4aa017748983906d57d00f7fc3f748
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\templates\Editar.hamlet:
-  hash: 2e747f1dcf827d82d047591d62cfa3c5b4b963a2e132577da72bfb74b8be2c5f
+  hash: a03c1082ba5549ca39bd5aed5da41e9de3e16192a38dbf3b70db0f4d43c5f806
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\src\Settings\StaticFiles.hs:
   hash: 0afdb84a9dbe874f41986518915d649ee4034374b74da113af679766da3264f8
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\templates\Perfil.lucius:
-  hash: de67f8e66e40a1d70f4bcc6be5731fe48038f70ee8b1d34f3b537b94a8934ddd
+  hash: 2791e4ae9d8e1bd446af557077ca4f8ac86847321db102bca42bcb70d68bf8f8
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\src\Handler\Home.hs:
   hash: f6f8f596c47707e4d2ef0b1585e249a572bf55a556551b18488ece697215a456
 C:\Users\Bianca\Documents\depósito\6\haskell\Haskell_P2\src\Import\NoFoundation.hs:

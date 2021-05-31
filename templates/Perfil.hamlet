@@ -17,11 +17,13 @@
             
 
 <div class="main">
-    <h1 id="titulo">
+    <h1>
         Meu Perfil
     <div id="dados">
-        Nome: #{usuarioNome usuario} 
-        E-mail: #{usuarioEmail usuario}
+        <p> 
+            Nome: #{usuarioNome usuario} 
+        <p> 
+            E-mail: #{usuarioEmail usuario}
         <form method=post action=@{ApagarUsR userid}>
-            <input type="submit" value="Excluir conta">
+            <input type="submit" value="Excluir conta" id="botao">
         <a href=@{EditarUsR userid}> Editar perfil

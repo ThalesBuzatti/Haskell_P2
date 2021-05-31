@@ -38,7 +38,7 @@ postAutR = do
             case usuarioExiste of
                 Nothing -> do
                     setMessage [shamlet|
-                        <div class="msg">
+                        <div class="msg" id="erro">
                             Usuário não encontrado. 
                     |]
                     redirect AutR
@@ -48,7 +48,7 @@ postAutR = do
                         redirect HomeR
                     else do
                         setMessage [shamlet|
-                            <div class="msg">
+                            <div class="msg" id="erro">
                                 Verifique se o e-mail e a senha estão corretos.
                         |]
                         redirect AutR

@@ -23,11 +23,12 @@
                     <a id="login" href=@{AutR}> Login
 
 <div class="main">
-    $maybe mensa <- msg 
-        <div>
-            ^{mensa}
-    <h1 id="titulo">
+    <h1>
         Editar Perfil              
     <form method=post action=@{EditarUsR userid}>
         ^{widget}
-        <input type="submit" value="Salvar">
+        <input type="submit" value="Salvar" id="botao">
+    <a href=@{PerfilR userid}> Voltar
+    $maybe mensa <- msg 
+        <div class="msg">
+            ^{mensa}
