@@ -49,11 +49,11 @@ postUsuarioR = do
                         |]  
                         redirect UsuarioR
                     else do
-                        redirect UsuarioR  -- linha temporária
-{-                        setMessage [shamlet|
+                        setMessage [shamlet|
                             <div class="msg" id="erro">
                                 As duas senhas são diferentes.
-                        |]  -}
+                        |]  
+                        redirect UsuarioR
         _ -> redirect HomeR
 
 getPerfilR :: UsuarioId -> Handler Html
@@ -61,7 +61,7 @@ getPerfilR userid = do
     usuario <- runDB $ get404 userid
     defaultLayout $ do
         toWidgetHead $(luciusFile "templates/Perfil.lucius")
-        $(whamletFile "templates/Perfil.hamlet")
+        $(whamletFile "templates/Perfil.hamlet") 
    
 getListaUsR :: Handler Html
 getListaUsR = do
@@ -81,7 +81,6 @@ getEditarUsR userid = do
     (widget,_) <- generateFormPost (formUsuario (Just usuario))
     msg <- getMessage
     defaultLayout $ do
-        usuario <- lookupSession "_ID"
         toWidgetHead $(luciusFile "templates/Editar.lucius")
         $(whamletFile "templates/Editar.hamlet")
 
@@ -108,11 +107,11 @@ postEditarUsR userid = do
                         |]  
                         redirect (EditarUsR userid)
                     else do
-                        redirect (PerfilR userid) -- linha temporária
-{-                        setMessage [shamlet|
+                        setMessage [shamlet|
                             <div class="msg" id="erro">
                                 As duas senhas são diferentes.
-                        |]  -}
+                        |]  
+                        redirect (EditarUsR userid)
         _ -> redirect HomeR
 
 getAdminR :: Handler Html

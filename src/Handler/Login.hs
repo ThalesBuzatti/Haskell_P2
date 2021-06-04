@@ -42,9 +42,9 @@ postAutR = do
                             Usuário não encontrado. 
                     |]
                     redirect AutR
-                Just (Entity _ usuario) -> do
+                Just (Entity userid usuario) -> do
                     if senha == usuarioSenha usuario then do
-                        setSession "_ID" (usuarioEmail usuario)
+                        setSession "_ID" (toPathPiece userid)
                         redirect HomeR
                     else do
                         setMessage [shamlet|

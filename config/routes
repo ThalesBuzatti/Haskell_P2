@@ -7,14 +7,14 @@
 /sobre Page1R GET
 /receitas Page2R GET
 /medidas Page3R GET
-
 /usuario UsuarioR GET POST
 /usuario/perfil/#UsuarioId PerfilR GET
 /usuario/apagar/#UsuarioId ApagarUsR POST
 /usuario/editar/#UsuarioId EditarUsR GET POST
 /login AutR GET POST
 /logout SairR POST
-
 /admin AdminR GET
 /usuarios ListaUsR GET
+/enviar-receita/#UsuarioId EnviarReceitaR GET POST
+/receita/#ReceitaId ReceitaR GET
 

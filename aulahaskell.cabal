@@ -25,6 +25,7 @@ library
       Handler.Common
       Handler.Home
       Handler.Login
+      Handler.Receita
       Handler.Usuario
       Import
       Import.NoFoundation

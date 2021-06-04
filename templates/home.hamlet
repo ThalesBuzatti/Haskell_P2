@@ -11,11 +11,10 @@
                 <a id="p3" href=@{Page3R}> Medidas de Ingredientes
 
         <ul class="m2">
-            $maybe email <- usuario
+            $maybe id <- usuario
                 <li>
                     <form action=@{SairR} method=post> 
-                        <input type="submit" value="Sair" id="sair">
-            
+                        <input type="submit" value="Sair" id="sair">            
             $nothing
                 <li>
                     <a id="cad" href=@{UsuarioR}> Cadastre-se

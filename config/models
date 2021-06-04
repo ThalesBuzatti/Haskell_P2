@@ -4,3 +4,9 @@ Usuario
         UniqueEmail email
 	senha Text
 	deriving Show
+
+Receita
+        usuarioid UsuarioId
+        nome Text
+        ingredientes Text
+        preparo Text
