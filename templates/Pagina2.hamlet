@@ -23,4 +23,8 @@
                     <a id="login" href=@{AutR}> Login
 
 <div class="main">
+    <ul>
+        $forall Entity receitaid receita <- receitas
+            <li>
+                <a href=@{ReceitaR receitaid}> #{receitaNome receita}
 

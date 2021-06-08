@@ -27,6 +27,7 @@ getPage1R = do
 
 getPage2R :: Handler Html
 getPage2R = do
+    receitas <- runDB $ selectList [] [Desc ReceitaId]
     defaultLayout $ do
         usuario <- lookupSession "_ID"
         toWidgetHead $(luciusFile "templates/Pagina2.lucius")

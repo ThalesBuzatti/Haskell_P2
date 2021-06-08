@@ -42,7 +42,7 @@ postEnviarReceitaR userid = do
 getReceitaR :: ReceitaId -> Handler Html
 getReceitaR receitaid = do
     let sql = "SELECT ??,?? FROM RECEITA \
-          \ INNER JOIN USUARIO ON USUARIO.USUARIOID = RECEITA.USUARIOID \
+          \ INNER JOIN USUARIO ON USUARIO.ID = RECEITA.USUARIOID \
           \ WHERE RECEITA.ID = ?"
     receita <- runDB $ get404 receitaid
     mostrarReceita <- runDB $ rawSql sql [toPersistValue receitaid] :: Handler [(Entity Receita, Entity Usuario)]

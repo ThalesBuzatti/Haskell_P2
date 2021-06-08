@@ -79,3 +79,24 @@ body {
     background: rgb(96, 48, 32);
     color: white;
 }
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 120px;
+    padding-left: 50px;
+    margin: 0;
+    text-align: left;
+    font-family: Verdana, sans-serif;
+    background-color: tan;
+}
+
+.main ul {
+    list-style-type: none;
+}
+
+.main a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}

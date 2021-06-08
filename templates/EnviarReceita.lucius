@@ -90,7 +90,20 @@ body {
     font-family: Verdana, sans-serif;
 }
 
-#hident3, #hident4 {
-    height: 300px;
-    width: 300px;
+.required {
+    padding: 10px 0;
+}
+
+#botao {
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.msg {
+    padding-top: 10px;
 }
